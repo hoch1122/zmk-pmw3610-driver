@@ -13,6 +13,12 @@ menuconfig PMW3610
 
 if PMW3610
 
+config PMW3610_SCROLL_TICK
+    int "PMW3610's required ticks to produce a scroll report"
+    default 20
+    help
+      Scroll tick value.
+
 config PMW3610_SWAP_XY
   bool "Swap the X/Y axis of PMW3610 sensor"
 
